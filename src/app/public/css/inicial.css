@@ -1,0 +1,25 @@
+main {
+    text-align: center;
+    min-width: 760px;
+}
+
+#conteudo {
+    background-color: white;
+    width: 1200px;
+    margin: 0 auto;
+    text-align: justify;
+}
+#espacamento {
+    background-color: white;
+    width: 1300px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+#barra {
+    padding: 10px;
+}
+
+#titulo1 {
+    text-align: center;
+}
