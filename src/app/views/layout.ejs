@@ -1,89 +1,46 @@
 <html lang="pt-br">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport", content="width=device-width, initial-scale=1">
-        <link rel="stylesheet", href="/bscss/bootstrap.min.css">
-        <link rel="stylesheet", href="/public/css/inicial.css">
-        <link rel="stylesheet", href="/public/css/agrotoxicos.css">
-        <link rel="stylesheet", href="/public/css/sobre.css">
-        <link rel="shortcut icon" type="imagex/png" href="/public/img/logo_agrotoxicos.ico">
-        <title>Agrotoxicos</title>
-    </head>
-    <body>
-        <header>
-            <div class="px-3 py-2 bg-dark text-white">
-                <div class="container">
-                    <div id="barra" class="d-flex align-items-center justify-content-center justify-content-lg-start">
-                        <a href="https://www.ifms.edu.br/"
-                            class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
-                            <img class="agrotoxicos" src="/public/img/logo_ifms.png" width="20%">
-                            <use xlink:href="#bootstrap"></use></img>
-                        </a>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" , content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" , href="/bscss/bootstrap.min.css">
+    <link rel="stylesheet" , href="/public/css/inicial.css">
+    <link rel="stylesheet" , href="/public/css/agrotoxicos.css">
+    <link rel="stylesheet" , href="/public/css/sobre.css">
+    <link rel="shortcut icon" type="imagex/png" href="/public/img/logo_agrotoxicos.ico">
+    <link rel="stylesheet" href="public/css/layout.css">
+    <title>Agrotoxicos</title>
     
-                        <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
-                            <li>
-                                <a href="/" class="nav-link text-white">
-                                    <svg class="bi d-block mx-auto mb-1" width="20" height="10">
-                                        <use xlink:href="#home"></use>
-                                    </svg>
-                                    Home
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/agrotoxicos" class="nav-link text-white">
-                                    <svg class="bi d-block mx-auto mb-1" width="20" height="10">
-                                        <use xlink:href="#speedometer2"></use>
-                                    </svg>
-                                    Agrotóxicos
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="nav-link text-white">
-                                    <svg class="bi d-block mx-auto mb-1" width="20" height="10">
-                                        <use xlink:href="#people-circle"></use>
-                                    </svg>
-                                    Informações
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/quemsomos" class="nav-link text-white">
-                                    <svg class="bi d-block mx-auto mb-1" width="20" height="10">
-                                        <use xlink:href="#table"></use>
-                                    </svg>
-                                    Quem Somos
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="nav-link text-white">
-                                    <svg class="bi d-block mx-auto mb-1" width="20" height="10">
-                                        <use xlink:href="#grid"></use>
-                                    </svg>
-                                    Contato
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <main id="main">
+</head>
 
-            <%- body %> 
+<body>
+    <header class="cabecalho">
+        <img  class="cabecalho-img" src="/public/img/logo_ifms.png" alt="Logo IFMS">
+        <nav class="cabecalho-menu">
+            <a class="cabecalho-menu-item" href="/">Home</a>
+            <a class="cabecalho-menu-item" href="/agrotoxicos">Agrotoxicos</a>
+            <a class="cabecalho-menu-item" href="/quemsomos">Quem Somos</a>
+            <a class="cabecalho-menu-item" href="">Contato</a>
+        </nav>
+    </header>
 
-        </main>
-        <footer class="bg-dark text-center text-white" id="footer">
+    <main id="main">
+
+        <%- body %>
+
+    </main>
     
-            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-                © 2022 Copyright:
-                <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
-            </div>
-        </footer>
+    <footer class="rodape">
+        Trabalho da Diciplina de Desenvolvimento Web 2 e Química 4
+    </footer>
 
-        <script src="/public/js/referente.js"></script>
-        <script src="/public/js/ajustador.js"></script>
-        <script src="/bsjs/bootstrap.min.js"></script>
-        <script src="/popperjs/popper.min.js"></script>
-        <script src="/jquery/jquery.min.js"></script>
-        <script src="/public/js/linkagem.js"></script>
-    </body>
+    <script src="/public/js/referente.js"></script>
+    <script src="/public/js/ajustador.js"></script>
+    <script src="/bsjs/bootstrap.min.js"></script>
+    <script src="/popperjs/popper.min.js"></script>
+    <script src="/jquery/jquery.min.js"></script>
+    <script src="/public/js/linkagem.js"></script>
+    <script src="/public/js/home.js"></script>
+</body>
+
 </html>

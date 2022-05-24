@@ -2,6 +2,7 @@
     text-align: justify;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
+    margin-top: 4%;
 }
 
 #barra_lateral {
@@ -23,7 +24,7 @@
     background-color: white;
 }
 
-#lista{
+#lista {
 
     list-style-type: none;
 
@@ -34,19 +35,28 @@
     border-radius: 5px;
 }
 
-#tituloLista{
+#tituloLista {
 
     margin-left: 25%;
 
 }
 
-.margens{
+.linkes {
 
-    
+    text-decoration: none;
+    color: black;
 
 }
 
-.titulo-p { 
+.linkes:hover {
+
+    text-decoration: none;
+    padding: 5px;
+    color: rgb(2, 117, 50);
+
+}
+
+.titulo-p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
 }
@@ -54,9 +64,10 @@
 .titulo-s {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
+    magin-top: 2%;
 }
 
-#debug1{
+#debug1 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
 }
