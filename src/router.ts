@@ -4,10 +4,10 @@ import { quemSomosController } from "./app/controller/QuemSomosController"
 
 const router: Router = Router()
 
-router.get("/", homeController.home);
+router.get("/agrotoxic229a.com.br", homeController.home);
 
-router.get("/agrotoxicos", homeController.agrotoxico)
+router.get("/agrotoxic229a.com.br/agrotoxicos", homeController.agrotoxico)
 
-router.get("/quemsomos" , quemSomosController.sobre)
+router.get("/agrotoxic229a.com.br/quemsomos" , quemSomosController.sobre)
 
 export { router };

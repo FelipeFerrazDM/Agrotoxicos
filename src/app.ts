@@ -3,12 +3,15 @@ import { router } from "./router";
 import expressEjsLayouts from "express-ejs-layouts";
 
 export class App {
-    public server: express.Application;
+
+    public server:express.Application;
 
     constructor() {
+
         this.server = express();
         this.middleware();
         this.router();
+
     }
 
     private middleware() {
