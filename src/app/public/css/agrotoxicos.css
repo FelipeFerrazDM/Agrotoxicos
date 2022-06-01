@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Sarala&display=swap');
 
+<<<<<<< HEAD
 #barra-lateral {
+=======
+#barra_lateral {
+>>>>>>> 383af3c02de0ce563a3fc91fa7daca7cbe159497
     position: fixed;
     font-size: 105%;
     padding: 15px;
@@ -37,6 +41,7 @@
     max-width: 70%;
     padding: 30px;
     width: 1050px;
+    max-width: 70%;
     background-color: white;
 }
 
