@@ -1,14 +1,10 @@
-#textos {
-    text-align: justify;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    margin-top: 4%;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Sarala&display=swap');
 
-#barra_lateral {
+#barra-lateral {
+    position: fixed;
     font-size: 105%;
     padding: 15px;
-    margin: 10px 10px 10px 10px;
+    left: 74%;
     width: 400px;
     float: right;
     font-family: Arial, Helvetica, sans-serif;
@@ -18,53 +14,57 @@
     border-radius: 10px;
 }
 
-.agrotoxicos_texto {
+#barra-lateral-tituloLista {
+    margin-left: 25%;
+}
+
+#barra-lateral-lista {
+    list-style-type: none;
+}
+
+.barra-lateral-linkes {
+    text-decoration: none;
+    color: black;
+}
+
+.barra-lateral-linkes:hover {
+    text-decoration: none;
+    padding: 5px;
+    color: rgb(2, 117, 50);
+}
+
+.agrotoxicos-conteudo {
+    max-width: 70%;
     padding: 30px;
     width: 1050px;
     background-color: white;
 }
 
-#lista {
-
-    list-style-type: none;
-
+#agrotoxicos-conteudo-textos {
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin-top: 4%;
 }
 
-.img-p {
+.agrotoxicos-conteudo-img-p {
     width: 90%;
     border-radius: 5px;
 }
 
-#tituloLista {
-
-    margin-left: 25%;
-
-}
-
-.linkes {
-
-    text-decoration: none;
-    color: black;
-
-}
-
-.linkes:hover {
-
-    text-decoration: none;
-    padding: 5px;
-    color: rgb(2, 117, 50);
-
-}
-
-.titulo-p {
+.agrotoxicos-conteudo-titulo-p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
 }
 
-.titulo-s {
+.agrotoxicos-conteudo-titulo-s {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
-    magin-top: 2%;
+    margin-top: 2%;
+}
+
+#agrotoxicos-conteudo-lista {
+    list-style-type: none;
 }
 
 #debug1 {

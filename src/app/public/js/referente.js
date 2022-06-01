@@ -1,4 +1,4 @@
-const $doc = $('html, body');
+const $doc = $('html, body, main');
 
 $('a').click(function() {
     $doc.animate({
