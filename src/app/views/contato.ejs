@@ -1,0 +1,35 @@
+<form id="formulario" action="/contato/comentario" method="post">
+    <div class="container" id="container">
+        <div class="form-outline mb-4" id="formulario-nome">
+            <input type="text" name="nome" id="nome" class="form-control" />
+            <label class="form-label" for="nome">Nome</label>
+        </div>
+
+        <div class="form-outline mb-4" id="formulario-email">
+            <input type="email" name="email" id="email" class="form-control" />
+            <label class="form-label" for="email">Email</label>
+        </div>
+
+        <div class="form-outline mb-4" id="formulario-mensagem">
+            <textarea class="form-control" name="conteudo" id="conteudo" rows="4"></textarea>
+            <label class="form-label" for="conteudo">Mensagem</label>
+        </div>
+
+        <div class="form-check d-flex justify-content-center mb-4">
+            <input class="form-check-input me-2" type="checkbox" value="" id="form4Example4" checked />
+            <label class="form-check-label" for="form4Example4">
+                Envie-me uma cópia desta Mensagem.
+            </label>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block mb-4">Enviar</button>
+    </div>
+</form>
+
+<% comentarios.forEach(comentario=> { %>
+
+    <p>
+        <%= comentario.nome %>
+    </p>
+
+    <% }) %>
