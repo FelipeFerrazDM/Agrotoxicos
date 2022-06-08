@@ -26,10 +26,38 @@
     </div>
 </form>
 
-<% comentarios.forEach(comentario=> { %>
+<section class="sessao-comentarios">
+    <% comentarios.forEach(comentario => { %>
 
-    <p>
-        <%= comentario.nome %>
-    </p>
+        <div class="comentario">
+            <div class="comentario-titulo">
+                <h3><%= comentario.nome %></h3>
+                <span><%= comentario.dataentrada %></span>
+            </div>
+            <div class="comentario-texto">
+
+                <p class="lh-1 text-break text-start">
+
+                    <%= comentario.conteudo %>
+
+                </p>
+
+            </div>
+
+        </div>
+        
 
     <% }) %>
+</section>
+
+<div class="col-xl-5 col-lg-6 mb-2">
+    <div class="toast show fade text-white bg-danger" role="alert" aria-live="assertive" aria-atomic="true" data-mdb-color="danger" data-mdb-autohide="false">
+      <div class="toast-header text-white bg-danger">
+        <i class="fas fa-exclamation-circle fa-lg me-2"></i>
+        <strong class="me-auto">ERRO FORMULARIO!</strong>
+        <small id="titulo-erro"></small>
+        <button type="button" class="btn-close btn-close-white" data-mdb-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body" id="erro-mensagem"></div>
+    </div>
+  </div>
