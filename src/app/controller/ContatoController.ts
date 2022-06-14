@@ -5,10 +5,12 @@ class ContatoController {
 
     public async contato(req: Request, res: Response) {
 
-        await pool.query(`SELECT nome, to_char("data_pub", 'DD/MM/YYYY') as "dataEntrada", conteudo FROM comentario ORDER BY ID ASC`)
+        await pool.query(`SELECT nome, to_char(data_pub, 'DD/MM/YYYY') as dataEntrada, conteudo FROM comentario ORDER BY ID ASC`)
             .then((array) => {
 
                 let comentarios = array.rows
+
+                console.log(comentarios);
 
                 return res.render("contato", { comentarios });
 
