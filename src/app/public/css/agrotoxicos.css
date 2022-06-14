@@ -35,11 +35,14 @@
 }
 
 .agrotoxicos-conteudo {
+    margin: 5px;
     max-width: 70%;
     padding: 30px;
     width: 1050px;
     max-width: 70%;
     background-color: white;
+    border-radius: 10px;
+    box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.5);
 }
 
 #agrotoxicos-conteudo-textos {
@@ -51,6 +54,11 @@
 
 .agrotoxicos-conteudo-img-p {
     width: 90%;
+    border-radius: 5px;
+}
+
+.agrotoxicos-conteudo-img-r {
+    width: 80%;
     border-radius: 5px;
 }
 
@@ -73,3 +81,9 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
 }
+
+
+
+/* responsividade */
+
+
